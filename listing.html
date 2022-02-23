@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/77ad616e29.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</head>
+<body style="background-color: whitesmoke;">
+    <!-- Hotel listings starts here -->
+
+    <section class="content">
+        
+        <div class="navbar">
+            <div class="container">
+                <a href="index.html">
+                    <div class="logo">
+                        <span class="left">○</span>
+                         lo.
+                         <span> go </span> 
+                        <span class="right">○</span>
+                    </div>
+                </a>
+    
+                <div class="navigation">
+                    <ul>
+                        <li>
+                            │
+                        </li>
+                        <li>
+                            <a href="#">Join Beta</a>
+                        </li>
+                        <li>
+                            <a href="login.html" target="_blank">Login</a>
+                        </li>
+                        <li class="create-btn" id="create">
+                            <a href="register.html" target="_blank">Create Account</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- using same booking search panel on listing page -->
+
+        <div class="booking-panel2">
+            
+            <div class="building2">
+                <img src="images/hotelicon.png" alt="not found" >
+            </div>
+            <div class="city2">
+                <label for=""> 
+                    <i class="fas fa-map-marker-alt fa-sm"></i> City
+                </label>
+                <input type="search" name="search" id="search" placeholder="Enter City">
+            </div>
+
+            <div class="checkin2">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-In
+                </label>
+                <input type="date" name="" id="">
+            </div>
+
+            <div class="checkout2">
+                <label for="">
+                    <i class="fas fa-calendar fa-sm"></i>
+                    Check-Out
+                </label>
+                <input type="date" name="" id="">
+            </div>
+            
+            <div class="guest2">
+                <label for="">
+                    <i class="fas fa-user-friends fa-sm" ></i>
+                    Guests
+                </label>
+
+                <div id="guest2">
+                    <input type="number" name="" id="" placeholder="Adults">
+                    <input type="number" name="" id="" placeholder="Kids">
+                </div>
+            </div>
+
+            <div class="search-button2" onclick="location.href = 'listing.html'">
+                <input type="button" value="Find Hotels"> 
+            </div>
+            
+        </div>
+
+        <div class="parts">
+            
+            <!-- <div class="left">
+                <div class="container">
+                    <label for="">
+                        Trending Destinations
+                    </label>
+                </div>
+            </div> -->
+
+            <div class="right">
+                <div class="hotels">
+                    <div class="container">
+        
+                        <!-- hotels listing card starts here -->
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <img src="images/hotel.jpg" alt="Not Found">
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">Five Star Demo Hotel</label>
+                                <h4 class="address">Omaxe, New Chandigarh</h4>
+                                
+                                <div class="description">
+                                    This property comes with a promise of 8 assured amenities, 
+                                    money-back guarantee and priority helpline support. 
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 29,999 Only...</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- hotel card completed below is same repeating thing -->
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <img src="images/hotel.jpg" alt="Not Found">
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">Five Star Demo Hotel</label>
+                                <h4 class="address">Omaxe, New Chandigarh</h4>
+                                
+                                <div class="description">
+                                    This property comes with a promise of 8 assured amenities, money-back guarantee and priority helpline support. 
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 29,999 Only...</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <img src="images/hotel.jpg" alt="Not Found">
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">Five Star Demo Hotel</label>
+                                <h4 class="address">Omaxe, New Chandigarh</h4>
+                                
+                                <div class="description">
+                                    This property comes with a promise of 8 assured amenities, money-back guarantee and priority helpline support. 
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 29,999 Only...</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="listed">
+                            
+                            <div class="pic">
+                                <img src="images/hotel.jpg" alt="Not Found">
+                            </div>
+                            <div class="details">
+                                <label class="hotel-name">Five Star Demo Hotel</label>
+                                <h4 class="address">Omaxe, New Chandigarh</h4>
+                                
+                                <div class="description">
+                                    This property comes with a promise of 8 assured amenities, money-back guarantee and priority helpline support. 
+                                </div>
+        
+                                <div class="price">
+                                    <h1>₹ 29,999 Only...</h1>
+                                    <h6>(including taxes & fees)</h6>
+                                </div>
+                                    
+                                <div class="book-btn" onclick="location.href = 'payment.html'">
+                                    <input type="button" value="Book Now">
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>        
+        
+    </section>
+</body>
+</html>
+
+
